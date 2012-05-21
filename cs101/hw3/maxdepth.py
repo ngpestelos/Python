@@ -6,6 +6,15 @@
 # questions of the homework ask you to explore two different ways
 # to limit the pages that it can crawl.
 
+# Modify the crawl_web procedure to take a second parameter,
+# max_depth, that limits the minimum number of consecutive
+# links that would need to be followed from the seed page to reach this
+# page. For example, if max_depth is 0, the only page that should
+# be crawled is the seed page. If max_depth is 1, the pages
+# that should be crawled are the seed page and every page that links
+# to it directly. If max_depth is 2, the crawl should also include all pages
+# that are linked to by these pages.
+
 def get_page(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
