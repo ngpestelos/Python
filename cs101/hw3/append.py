@@ -41,7 +41,7 @@ list3 += [5]
 # above.
 
 def proc3(mylist):
-	mylist += [6]
+    mylist += [6]
 
 #print list3
 proc3(list1)
@@ -66,18 +66,18 @@ list3 += [7,8,9]
 # not be mutated but a copy should be returned with the additional entry 'w'.
 
 def list_test(list1, list2, list3):
-	list1.append('a')
-	list2 += ['a', 'b', 'c']
-	list_tmp = []
-	list_tmp += list3
-	list_tmp += ['w']
-	return list_tmp
+    list1.append('a')
+    list2 += ['a', 'b', 'c']
+    list_tmp = []
+    list_tmp += list3
+    list_tmp += ['w']
+    return list_tmp
 
 first_input = [1,2,3]
 second_input = [4,5,6]
-third_input = [7,8,9]	
+third_input = [7,8,9]   
 
 print list_test(first_input, second_input, third_input) # [7,8,9,'w']
-print first_input 										# [1,2,3,'a']
-print second_input 										# [4,5,6,'a','b','c']
-print third_input										# [7,8,9]
+print first_input                                       # [1,2,3,'a']
+print second_input                                      # [4,5,6,'a','b','c']
+print third_input                                       # [7,8,9]
