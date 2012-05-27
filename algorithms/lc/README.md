@@ -4,7 +4,4 @@ Knapsack
 Coin change
 Dynamic programming
 Induction
-
-Count UP
-Count IN PLACE
-Count DOWN
+[Subset-sum Problem](http://en.wikipedia.org/wiki/Subset_sum_problem)
